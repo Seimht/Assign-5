@@ -3,7 +3,7 @@
   Date: 2025-10-03
   CSC 372-01
 
-Rock, Paper, Scissors.
+  JS for Rock, Paper, Scissors.
 */
 'use strict';
 
@@ -15,7 +15,7 @@ const ASSETS = {
   scissors:  { src: "images/scissors.png",  label: "scissors" }
 };
 
-// DOM
+
 const throwFigures = Array.from(document.querySelectorAll('.throw'));
 const computerImg = document.getElementById('computer-image');
 const computerCaption = document.getElementById('computer-caption');
@@ -48,6 +48,7 @@ function randomThrow() {
 }
 
 /**
+ * Decide winner from player vs computer.
  * @param {Throw} player
  * @param {Throw} computer
  * @return {"win"|"lose"|"tie"}
@@ -105,7 +106,7 @@ function resetGame() {
   lossesEl.textContent = "0";
   tiesEl.textContent = "0";
   outcomeText.textContent = "Pick a throw to start.";
-  computerImg.src = "img/question-mark.png";
+  computerImg.src = "images/question-mark.png";
   computerImg.alt = "Thinking...";
   computerCaption.textContent = "?";
   throwFigures.forEach(f => f.classList.remove('selected'));

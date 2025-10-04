@@ -2,11 +2,14 @@
   Name: Seim Habte
   Date: 2025-10-03
   CSC 372-01
+
+  Styles 
 */
 
 
 * { box-sizing: border-box; }
 html, body { height: 100%; }
+
 
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -16,6 +19,7 @@ body {
 }
 h1, h2 { line-height: 1.2; }
 img { display: block; max-width: 140px; height: auto; }
+
 
 .site-header, .site-footer { text-align: center; }
 .site-header { padding-top: 1rem; }
