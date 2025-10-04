@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+  Name: Seim Habte
+  Date: 2025-10-03
+  CSC 372-01
+  Assignment 5: Rock, Paper, Scissors.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rock • Paper • Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Rock • Paper • Scissors</h1>
+      <p class="tagline">Pick a throw to start.</p>
+    </header>
+
+    <main>
+      <section id="player-section" aria-labelledby="player-heading">
+        <h2 id="player-heading">Your throw</h2>
+        <div class="throw-grid" role="group" aria-label="Choose your throw">
+          <figure class="throw" data-throw="rock" tabindex="0">
+            <img src="images/rock.png" alt="Rock" />
+            <figcaption>rock</figcaption>
+          </figure>
+          <figure class="throw" data-throw="paper" tabindex="0">
+            <img src="images/paper.png" alt="Paper" />
+            <figcaption>paper</figcaption>
+          </figure>
+          <figure class="throw" data-throw="scissors" tabindex="0">
+            <img src="images/scissors.png" alt="Scissors" />
+            <figcaption>scissors</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="computer-section" aria-labelledby="computer-heading">
+        <h2 id="computer-heading">Computer throw</h2>
+        <figure class="computer-figure">
+    
+          <img id="computer-image" src="images/question-mark.png" alt="Thinking..." />
+          <figcaption id="computer-caption">?</figcaption>
+        </figure>
+      </section>
+
+      <section id="outcome-section" aria-labelledby="outcome-heading">
+        <h2 id="outcome-heading">Outcome</h2>
+        <p id="outcome-text">Pick a throw to start.</p>
+      </section>
+
+   
+      <section id="score-section" aria-labelledby="score-heading">
+        <h2 id="score-heading">Score (this page load)</h2>
+        <div class="scoreboard">
+          <p>Wins: <span id="wins">0</span></p>
+          <p>Losses: <span id="losses">0</span></p>
+          <p>Ties: <span id="ties">0</span></p>
+        </div>
+        <button id="reset-btn" type="button">Reset</button>
+      </section>
+    </main>
+  </body>
+</html>
